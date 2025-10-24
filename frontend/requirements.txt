@@ -1,0 +1,9 @@
+streamlit
+pandas
+requests
+plotly
+matplotlib
+xlsxwriter
+websockets
+asyncio
+psutil

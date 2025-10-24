@@ -1,0 +1,501 @@
+ID аномалии;Аномалия;ID проблемы;Проблема
+1;ata1: COMRESET failed;1;RAID controller firmware fault detected
+2;RAID array degraded;1;RAID controller firmware fault detected
+3;RAID disk offline;1;RAID controller firmware fault detected
+4;ata1: read timeout;1;RAID controller firmware fault detected
+5;Disk status unknown;1;RAID controller firmware fault detected
+6;Rebuild process hung;1;RAID controller firmware fault detected
+7;ata1: device disconnected;1;RAID controller firmware fault detected
+8;RAID controller reset;1;RAID controller firmware fault detected
+481;segfault at 0x0 ip 0x7f1234567890;1;RAID controller firmware fault detected
+482;Performance degradation detected;1;RAID controller firmware fault detected
+9;CPU0: Temperature critical;2;CPU0: Core temperature above threshold
+10;CPU throttling enabled;2;CPU0: Core temperature above threshold
+11;Fan speed above 5000 RPM;2;CPU0: Core temperature above threshold
+12;Thermal event logged;2;CPU0: Core temperature above threshold
+13;Process crashed due to CPU fault;2;CPU0: Core temperature above threshold
+14;Sensor T1 critical;2;CPU0: Core temperature above threshold
+15;Panic due to thermal limit;2;CPU0: Core temperature above threshold
+16;CPU clock reduced;2;CPU0: Core temperature above threshold
+483;Error logged in system journal;2;CPU0: Core temperature above threshold
+484;Service stopped unexpectedly;2;CPU0: Core temperature above threshold
+17;ECC single-bit error;3;Memory ECC error detected
+18;MEMORY_FAULT 0x0000;3;Memory ECC error detected
+19;Memory access latency high;3;Memory ECC error detected
+20;Data corrupted in memory;3;Memory ECC error detected
+21;Out of memory error;3;Memory ECC error detected
+22;Process terminated abnormally;3;Memory ECC error detected
+23;Memory test failed;3;Memory ECC error detected
+24;kmalloc failure;3;Memory ECC error detected
+485;User request failed with error;3;Memory ECC error detected
+486;High CPU/memory usage alert;3;Memory ECC error detected
+25;PSU1 voltage drop;4;PSU voltage out of range
+26;PSU voltage unstable;4;PSU voltage out of range
+27;System unstable under load;4;PSU voltage out of range
+28;PSU fan stopped;4;PSU voltage out of range
+29;Overcurrent event;4;PSU voltage out of range
+30;Power loss detected;4;PSU voltage out of range
+31;Boot failure: no power;4;PSU voltage out of range
+32;PSU temperature high;4;PSU voltage out of range
+487;Intermittent operation failure;4;PSU voltage out of range
+488;Operation timed out;4;PSU voltage out of range
+33;SSD wear level critical;5;SSD wear-leveling threshold exceeded
+34;SSD read latency high;5;SSD wear-leveling threshold exceeded
+35;SSD health warning;5;SSD wear-leveling threshold exceeded
+36;SSD write error;5;SSD wear-leveling threshold exceeded
+37;SSD lifespan critical;5;SSD wear-leveling threshold exceeded
+38;Slow file access reported;5;SSD wear-leveling threshold exceeded
+39;Filesystem read-only;5;SSD wear-leveling threshold exceeded
+40;SSD failure predicted;5;SSD wear-leveling threshold exceeded
+489;Data integrity check failed;5;SSD wear-leveling threshold exceeded
+490;Process hung in execution;5;SSD wear-leveling threshold exceeded
+41;VRM failure on MB;6;Motherboard VRM failure detected
+42;Short circuit detected;6;Motherboard VRM failure detected
+43;Hardware fault MB1;6;Motherboard VRM failure detected
+44;System instability reported;6;Motherboard VRM failure detected
+45;Hardware error MB1;6;Motherboard VRM failure detected
+46;MB component failure;6;Motherboard VRM failure detected
+47;POST error code 0xFF;6;Motherboard VRM failure detected
+48;Device disconnect USB0;6;Motherboard VRM failure detected
+481;segfault at 0x0 ip 0x7f1234567890;6;Motherboard VRM failure detected
+482;Performance degradation detected;6;Motherboard VRM failure detected
+49;ata2: SError: { BadCRC };7;HDD mechanical fault (SMART failure)
+50;HDD clicking detected;7;HDD mechanical fault (SMART failure)
+51;Filesystem corrupted;7;HDD mechanical fault (SMART failure)
+52;HDD response timeout;7;HDD mechanical fault (SMART failure)
+53;HDD SMART error;7;HDD mechanical fault (SMART failure)
+54;Data loss on ata2;7;HDD mechanical fault (SMART failure)
+55;ata2: not detected;7;HDD mechanical fault (SMART failure)
+56;ata2: I/O timeout;7;HDD mechanical fault (SMART failure)
+483;Error logged in system journal;7;HDD mechanical fault (SMART failure)
+484;Service stopped unexpectedly;7;HDD mechanical fault (SMART failure)
+57;GPU temp 95C;8;GPU thermal limit exceeded
+58;GPU clock throttled;8;GPU thermal limit exceeded
+59;GPU crash during render;8;GPU thermal limit exceeded
+60;GPU thermal alert;8;GPU thermal limit exceeded
+61;Low FPS in application;8;GPU thermal limit exceeded
+62;Driver crash error;8;GPU thermal limit exceeded
+63;GPU fan at 100%;8;GPU thermal limit exceeded
+64;GPU thermal shutdown;8;GPU thermal limit exceeded
+485;User request failed with error;8;GPU thermal limit exceeded
+486;High CPU/memory usage alert;8;GPU thermal limit exceeded
+65;eth0: link down;9;NIC link down due to hardware fault
+66;NIC link failure;9;NIC link down due to hardware fault
+67;No network on eth0;9;NIC link down due to hardware fault
+68;eth0: packet drops;9;NIC link down due to hardware fault
+69;NIC hardware error;9;NIC link down due to hardware fault
+70;eth0: low throughput;9;NIC link down due to hardware fault
+71;NIC driver crash;9;NIC link down due to hardware fault
+72;eth0: timeout;9;NIC link down due to hardware fault
+487;Intermittent operation failure;9;NIC link down due to hardware fault
+488;Operation timed out;9;NIC link down due to hardware fault
+73;Fan speed below threshold;10;Cooling fan RPM below threshold
+74;BIOS thermal warning;10;Cooling fan RPM below threshold
+75;System thermal shutdown;10;Cooling fan RPM below threshold
+76;Fan stopped alert;10;Cooling fan RPM below threshold
+77;No fan noise detected;10;Cooling fan RPM below threshold
+78;Overheat damage reported;10;Cooling fan RPM below threshold
+79;Thermal throttling active;10;Cooling fan RPM below threshold
+80;Temp spike alert;10;Cooling fan RPM below threshold
+489;Data integrity check failed;10;Cooling fan RPM below threshold
+490;Process hung in execution;10;Cooling fan RPM below threshold
+81;Syntax error in module;11;Syntax error in module initialization
+82;Parse error at line 10;11;Syntax error in module initialization
+83;Runtime error logged;11;Syntax error in module initialization
+84;Invalid output generated;11;Syntax error in module initialization
+85;Syntax alert triggered;11;Syntax error in module initialization
+86;Script execution failed;11;Syntax error in module initialization
+87;IDE debug error;11;Syntax error in module initialization
+88;Parser process hung;11;Syntax error in module initialization
+481;segfault at 0x0 ip 0x7f1234567890;11;Syntax error in module initialization
+482;Performance degradation detected;11;Syntax error in module initialization
+89;High memory usage alert;12;Memory allocation failure due to leak
+90;Slow application response;12;Memory allocation failure due to leak
+91;Out of memory error;12;Memory allocation failure due to leak
+92;Swap space exhausted;12;Memory allocation failure due to leak
+93;kmalloc failure;12;Memory allocation failure due to leak
+94;RAM usage spike;12;Memory allocation failure due to leak
+95;Performance warning;12;Memory allocation failure due to leak
+96;Process hung on memory;12;Memory allocation failure due to leak
+483;Error logged in system journal;12;Memory allocation failure due to leak
+484;Service stopped unexpectedly;12;Memory allocation failure due to leak
+97;Module load error;13;Dependency version mismatch detected
+98;Dependency conflict error;13;Dependency version mismatch detected
+99;Library version error;13;Dependency version mismatch detected
+100;Module incompatibility alert;13;Dependency version mismatch detected
+101;Version conflict logged;13;Dependency version mismatch detected
+102;Missing dependency error;13;Dependency version mismatch detected
+103;Slow module initialization;13;Dependency version mismatch detected
+104;Dependency load failed;13;Dependency version mismatch detected
+485;User request failed with error;13;Dependency version mismatch detected
+486;High CPU/memory usage alert;13;Dependency version mismatch detected
+105;Config file parse error;14;Invalid configuration file parsing error
+106;Invalid config value;14;Invalid configuration file parsing error
+107;Service failed to start;14;Invalid configuration file parsing error
+108;Config validation failed;14;Invalid configuration file parsing error
+109;Application misconfigured;14;Invalid configuration file parsing error
+110;Config missing alert;14;Invalid configuration file parsing error
+111;Syntax error in config;14;Invalid configuration file parsing error
+112;Config load crash;14;Invalid configuration file parsing error
+487;Intermittent operation failure;14;Invalid configuration file parsing error
+488;Operation timed out;14;Invalid configuration file parsing error
+113;Unhandled exception logged;15;Unhandled exception in runtime
+114;Exception alert triggered;15;Unhandled exception in runtime
+115;Process frozen;15;Unhandled exception in runtime
+116;Exception stack trace;15;Unhandled exception in runtime
+117;Process terminated;15;Unhandled exception in runtime
+118;Debug exception error;15;Unhandled exception in runtime
+119;Slow response on exception;15;Unhandled exception in runtime
+120;System unstable;15;Unhandled exception in runtime
+489;Data integrity check failed;15;Unhandled exception in runtime
+490;Process hung in execution;15;Unhandled exception in runtime
+121;Update install error;16;Software update installation failed
+122;Partial update alert;16;Software update installation failed
+123;Version mismatch error;16;Software update installation failed
+124;Rollback error logged;16;Software update installation failed
+125;Update download failed;16;Software update installation failed
+126;Post-update crash;16;Software update installation failed
+127;Inconsistent state detected;16;Software update installation failed
+128;Update timeout alert;16;Software update installation failed
+481;segfault at 0x0 ip 0x7f1234567890;16;Software update installation failed
+482;Performance degradation detected;16;Software update installation failed
+129;Device not found;17;Driver conflict with device
+130;Driver crash logged;17;Driver conflict with device
+131;Device access error;17;Driver conflict with device
+132;Driver install failed;17;Driver conflict with device
+133;Device response slow;17;Driver conflict with device
+134;Driver incompatibility alert;17;Driver conflict with device
+135;Device timeout error;17;Driver conflict with device
+136;BSOD driver fault;17;Driver conflict with device
+483;Error logged in system journal;17;Driver conflict with device
+484;Service stopped unexpectedly;17;Driver conflict with device
+137;File read error;18;File corruption detected during read
+138;File load crash;18;File corruption detected during read
+139;File data loss alert;18;File corruption detected during read
+140;File I/O error;18;File corruption detected during read
+141;Checksum error logged;18;File corruption detected during read
+142;Slow file access;18;File corruption detected during read
+143;Invalid file format;18;File corruption detected during read
+144;File handling error;18;File corruption detected during read
+485;User request failed with error;18;File corruption detected during read
+486;High CPU/memory usage alert;18;File corruption detected during read
+145;Thread deadlock detected;19;Thread deadlock in process
+146;Deadlock alert logged;19;Thread deadlock in process
+147;Slow thread execution;19;Thread deadlock in process
+148;Thread timeout error;19;Thread deadlock in process
+149;Thread unresponsive;19;Thread deadlock in process
+150;High CPU usage by thread;19;Thread deadlock in process
+151;Deadlock detection alert;19;Thread deadlock in process
+152;Thread crash error;19;Thread deadlock in process
+487;Intermittent operation failure;19;Thread deadlock in process
+488;Operation timed out;19;Thread deadlock in process
+153;API request failed;20;API connection refused by server
+154;API connection error;20;API connection refused by server
+155;Invalid API response;20;API connection refused by server
+156;Slow API response;20;API connection refused by server
+157;API auth error;20;API connection refused by server
+158;API timeout alert;20;API connection refused by server
+159;API data mismatch;20;API connection refused by server
+160;API service unavailable;20;API connection refused by server
+489;Data integrity check failed;20;API connection refused by server
+490;Process hung in execution;20;API connection refused by server
+161;eth0: link down;21;Network interface eth0 link failure
+162;eth0: link failure;21;Network interface eth0 link failure
+163;eth0: low bandwidth;21;Network interface eth0 link failure
+164;eth0: CRC errors;21;Network interface eth0 link failure
+165;eth0: phy error;21;Network interface eth0 link failure
+166;Network timeout;21;Network interface eth0 link failure
+167;Slow network response;21;Network interface eth0 link failure
+168;eth0: link down alert;21;Network interface eth0 link failure
+481;segfault at 0x0 ip 0x7f1234567890;21;Network interface eth0 link failure
+482;Performance degradation detected;21;Network interface eth0 link failure
+169;VLAN10 high latency;22;Network congestion on VLAN 10
+170;Web page load timeout;22;Network congestion on VLAN 10
+171;Network app timeout;22;Network congestion on VLAN 10
+172;Bandwidth low alert;22;Network congestion on VLAN 10
+173;Packet retransmission;22;Network congestion on VLAN 10
+174;Congestion alert logged;22;Network congestion on VLAN 10
+175;Slow file transfers;22;Network congestion on VLAN 10
+176;Network queue overflow;22;Network congestion on VLAN 10
+483;Error logged in system journal;22;Network congestion on VLAN 10
+484;Service stopped unexpectedly;22;Network congestion on VLAN 10
+177;Name resolution error;23;DNS query timeout to upstream server
+178;Slow DNS query response;23;DNS query timeout to upstream server
+179;DNS timeout alert;23;DNS query timeout to upstream server
+180;Application connection failure;23;DNS query timeout to upstream server
+181;DNS server unreachable;23;DNS query timeout to upstream server
+182;Intermittent DNS failure;23;DNS query timeout to upstream server
+183;Invalid DNS response;23;DNS query timeout to upstream server
+184;Slow web access due to DNS;23;DNS query timeout to upstream server
+485;User request failed with error;23;DNS query timeout to upstream server
+486;High CPU/memory usage alert;23;DNS query timeout to upstream server
+187;Traffic blocked alert;24;Traffic dropped due to rule mismatch
+188;Connection refused error;24;Traffic dropped due to rule mismatch
+189;Firewall rule mismatch;24;Traffic dropped due to rule mismatch
+190;Slow network access;24;Traffic dropped due to rule mismatch
+191;Application timeout from firewall;24;Traffic dropped due to rule mismatch
+192;Denied packet warning;24;Traffic dropped due to rule mismatch
+193;Network service inaccessible;24;Traffic dropped due to rule mismatch
+194;Intermittent connection drop;24;Traffic dropped due to rule mismatch
+487;Intermittent operation failure;24;Traffic dropped due to rule mismatch
+488;Operation timed out;24;Traffic dropped due to rule mismatch
+195;IP conflict error logged;25;Duplicate IP address detected
+196;Network connectivity drop;25;Duplicate IP address detected
+197;Slow network performance;25;Duplicate IP address detected
+198;Duplicate IP alert;25;Duplicate IP address detected
+199;Intermittent device disconnect;25;Duplicate IP address detected
+200;Network timeout from conflict;25;Duplicate IP address detected
+201;Device access error;25;Duplicate IP address detected
+202;MAC address mismatch;25;Duplicate IP address detected
+489;Data integrity check failed;25;Duplicate IP address detected
+490;Process hung in execution;25;Duplicate IP address detected
+203;SSL handshake failure;26;SSL certificate expired
+204;Certificate expired alert;26;SSL certificate expired
+205;Secure connection error;26;SSL certificate expired
+206;Application access denied;26;SSL certificate expired
+207;SSL validation error logged;26;SSL certificate expired
+208;Slow secure connection;26;SSL certificate expired
+209;User-facing SSL warning;26;SSL certificate expired
+210;Connection timeout due to SSL;26;SSL certificate expired
+481;segfault at 0x0 ip 0x7f1234567890;26;SSL certificate expired
+482;Performance degradation detected;26;SSL certificate expired
+211;VPN connection drop;27;VPN tunnel handshake failure
+212;Tunnel establishment error;27;VPN tunnel handshake failure
+213;Slow VPN performance;27;VPN tunnel handshake failure
+214;Authentication failure in VPN;27;VPN tunnel handshake failure
+215;VPN timeout alert;27;VPN tunnel handshake failure
+216;Intermittent VPN connectivity;27;VPN tunnel handshake failure
+217;Data loss over VPN;27;VPN tunnel handshake failure
+218;VPN server unreachable;27;VPN tunnel handshake failure
+483;Error logged in system journal;27;VPN tunnel handshake failure
+484;Service stopped unexpectedly;27;VPN tunnel handshake failure
+219;Routing error logged;28;Router routing table misconfiguration
+220;Network inaccessible;28;Router routing table misconfiguration
+221;Slow routing performance;28;Router routing table misconfiguration
+222;Packet loss from misconfig;28;Router routing table misconfiguration
+223;Incorrect route alert;28;Router routing table misconfiguration
+224;Intermittent network drop;28;Router routing table misconfiguration
+225;Routing table error;28;Router routing table misconfiguration
+226;Connection timeout from router;28;Router routing table misconfiguration
+485;User request failed with error;28;Router routing table misconfiguration
+486;High CPU/memory usage alert;28;Router routing table misconfiguration
+227;Port 1/0/1 down alert;29;Switch port 1/0/1 down
+228;No connectivity on port;29;Switch port 1/0/1 down
+229;Intermittent port drop;29;Switch port 1/0/1 down
+230;Slow port performance;29;Switch port 1/0/1 down
+231;Switch port error;29;Switch port 1/0/1 down
+232;Packet loss on port;29;Switch port 1/0/1 down
+233;Device disconnected from switch;29;Switch port 1/0/1 down
+234;Port config mismatch;29;Switch port 1/0/1 down
+487;Intermittent operation failure;29;Switch port 1/0/1 down
+488;Operation timed out;29;Switch port 1/0/1 down
+235;High packet loss from DDoS;30;DDoS attack detected on interface
+236;Network latency spike;30;DDoS attack detected on interface
+237;Application timeout from attack;30;DDoS attack detected on interface
+238;Bandwidth saturation alert;30;DDoS attack detected on interface
+239;Slow network response;30;DDoS attack detected on interface
+240;DDoS detection warning;30;DDoS attack detected on interface
+241;Packet drop logged;30;DDoS attack detected on interface
+242;System overload from DDoS;30;DDoS attack detected on interface
+489;Data integrity check failed;30;DDoS attack detected on interface
+490;Process hung in execution;30;DDoS attack detected on interface
+243;Database connection error;31;Database instance stopped unexpectedly
+244;SQL query timeout;31;Database instance stopped unexpectedly
+245;Empty SQL query result;31;Database instance stopped unexpectedly
+246;No client activity logged;31;Database instance stopped unexpectedly
+247;Application UI freeze;31;Database instance stopped unexpectedly
+248;Database server down alert;31;Database instance stopped unexpectedly
+249;Slow database response;31;Database instance stopped unexpectedly
+250;Connection refused error;31;Database instance stopped unexpectedly
+481;segfault at 0x0 ip 0x7f1234567890;31;Database instance stopped unexpectedly
+482;Performance degradation detected;31;Database instance stopped unexpectedly
+251;Invalid SQL query error;32;Syntax error in SQL query
+252;Query execution failure;32;Syntax error in SQL query
+253;Slow query performance;32;Syntax error in SQL query
+254;Syntax error logged;32;Syntax error in SQL query
+255;Application crash on query;32;Syntax error in SQL query
+256;Data retrieval error;32;Syntax error in SQL query
+257;SQL validation alert;32;Syntax error in SQL query
+258;System hang on query;32;Syntax error in SQL query
+483;Error logged in system journal;32;Syntax error in SQL query
+484;Service stopped unexpectedly;32;Syntax error in SQL query
+259;Connection timeout error;33;Connection timeout to database
+260;Slow database connection;33;Connection timeout to database
+261;Application hang on DB access;33;Connection timeout to database
+262;Timeout alert logged;33;Connection timeout to database
+263;Intermittent DB connectivity;33;Connection timeout to database
+264;No response from DB server;33;Connection timeout to database
+265;User-facing DB error;33;Connection timeout to database
+266;System delay from DB timeout;33;Connection timeout to database
+485;User request failed with error;33;Connection timeout to database
+486;High CPU/memory usage alert;33;Connection timeout to database
+267;Slow query from index issue;34;Index corruption on table
+268;Data retrieval error;34;Index corruption on table
+269;Index corruption alert;34;Index corruption on table
+270;Database performance degraded;34;Index corruption on table
+271;Query timeout warning;34;Index corruption on table
+272;Inconsistent query result;34;Index corruption on table
+273;Index rebuild failure;34;Index corruption on table
+274;Application crash on index;34;Index corruption on table
+487;Intermittent operation failure;34;Index corruption on table
+488;Operation timed out;34;Index corruption on table
+275;Transaction deadlock error;35;Transaction deadlock detected
+276;Slow transaction processing;35;Transaction deadlock detected
+277;Deadlock alert logged;35;Transaction deadlock detected
+278;Application hang on transaction;35;Transaction deadlock detected
+279;Data inconsistency from deadlock;35;Transaction deadlock detected
+280;Transaction timeout warning;35;Transaction deadlock detected
+281;System freeze on DB access;35;Transaction deadlock detected
+282;User-facing transaction error;35;Transaction deadlock detected
+489;Data integrity check failed;35;Transaction deadlock detected
+490;Process hung in execution;35;Transaction deadlock detected
+283;Replication lag alert;36;Replication lag exceeded threshold
+284;Inconsistent replica data;36;Replication lag exceeded threshold
+285;Replication error logged;36;Replication lag exceeded threshold
+286;Slow replica sync;36;Replication lag exceeded threshold
+287;Data loss on replica;36;Replication lag exceeded threshold
+288;Replication timeout warning;36;Replication lag exceeded threshold
+289;Application error from replica;36;Replication lag exceeded threshold
+290;User-facing data inconsistency;36;Replication lag exceeded threshold
+481;segfault at 0x0 ip 0x7f1234567890;36;Replication lag exceeded threshold
+482;Performance degradation detected;36;Replication lag exceeded threshold
+291;Login failure error;37;Authentication failure for user
+292;Authentication error logged;37;Authentication failure for user
+293;Application access denied;37;Authentication failure for user
+294;Slow authentication attempt;37;Authentication failure for user
+295;User credential rejected;37;Authentication failure for user
+296;Authentication timeout alert;37;Authentication failure for user
+297;Database access error;37;Authentication failure for user
+298;System hang on DB login;37;Authentication failure for user
+483;Error logged in system journal;37;Authentication failure for user
+484;Service stopped unexpectedly;37;Authentication failure for user
+299;Storage limit error;38;Storage engine out of disk space
+300;Query execution failure;38;Storage engine out of disk space
+301;Slow database performance;38;Storage engine out of disk space
+302;Storage full alert;38;Storage engine out of disk space
+303;Application crash on DB write;38;Storage engine out of disk space
+304;Data insertion error;38;Storage engine out of disk space
+305;Database timeout warning;38;Storage engine out of disk space
+306;User-facing storage error;38;Storage engine out of disk space
+485;User request failed with error;38;Storage engine out of disk space
+486;High CPU/memory usage alert;38;Storage engine out of disk space
+307;Backup job failure;39;Backup job failed with error
+308;Incomplete backup alert;39;Backup job failed with error
+309;Slow backup performance;39;Backup job failed with error
+310;Backup corruption error;39;Backup job failed with error
+311;Backup timeout warning;39;Backup job failed with error
+312;Data loss during backup;39;Backup job failed with error
+313;Backup storage error;39;Backup job failed with error
+314;System hang during backup;39;Backup job failed with error
+487;Intermittent operation failure;39;Backup job failed with error
+488;Operation timed out;39;Backup job failed with error
+315;Corrupted table error;40;Table corruption detected
+316;Query failure on table;40;Table corruption detected
+317;Data retrieval error from table;40;Table corruption detected
+318;Slow table operation;40;Table corruption detected
+319;Table corruption alert;40;Table corruption detected
+320;Application crash on table;40;Table corruption detected
+321;Inconsistent table data;40;Table corruption detected
+322;Table repair failure;40;Table corruption detected
+489;Data integrity check failed;40;Table corruption detected
+490;Process hung in execution;40;Table corruption detected
+323;Overheating alert for servers;41;Data center cooling system failure
+324;Thermal shutdown warning;41;Data center cooling system failure
+325;High temperature logged;41;Data center cooling system failure
+326;Performance degradation from heat;41;Data center cooling system failure
+327;System crash due to overheating;41;Data center cooling system failure
+328;Cooling system error alert;41;Data center cooling system failure
+329;Slow server response;41;Data center cooling system failure
+330;Hardware damage reported;41;Data center cooling system failure
+481;segfault at 0x0 ip 0x7f1234567890;41;Data center cooling system failure
+482;Performance degradation detected;41;Data center cooling system failure
+331;Server shutdown alert;42;Power outage detected in rack
+332;Power loss error logged;42;Power outage detected in rack
+333;System inaccessible;42;Power outage detected in rack
+334;UPS failure warning;42;Power outage detected in rack
+335;Service downtime from power;42;Power outage detected in rack
+336;Hardware reset error;42;Power outage detected in rack
+337;Slow system recovery;42;Power outage detected in rack
+338;Power supply failure alert;42;Power outage detected in rack
+483;Error logged in system journal;42;Power outage detected in rack
+484;Service stopped unexpectedly;42;Power outage detected in rack
+339;Hypervisor crash alert;43;ESXi hypervisor kernel panic
+340;VM inaccessibility error;43;ESXi hypervisor kernel panic
+341;Slow VM performance;43;ESXi hypervisor kernel panic
+342;Hypervisor error logged;43;ESXi hypervisor kernel panic
+343;VM restart failure;43;ESXi hypervisor kernel panic
+344;System freeze on VM access;43;ESXi hypervisor kernel panic
+345;Hypervisor resource error;43;ESXi hypervisor kernel panic
+346;User-facing VM issue;43;ESXi hypervisor kernel panic
+485;User request failed with error;43;ESXi hypervisor kernel panic
+486;High CPU/memory usage alert;43;ESXi hypervisor kernel panic
+347;High CPU usage in VM;44;VM resource allocation exceeded
+348;VM performance degradation;44;VM resource allocation exceeded
+349;Resource allocation error;44;VM resource allocation exceeded
+350;Slow VM response time;44;VM resource allocation exceeded
+351;VM crash alert;44;VM resource allocation exceeded
+352;Memory exhaustion in VM;44;VM resource allocation exceeded
+353;Application hang in VM;44;VM resource allocation exceeded
+354;User complaint about VM slowness;44;VM resource allocation exceeded
+487;Intermittent operation failure;44;VM resource allocation exceeded
+488;Operation timed out;44;VM resource allocation exceeded
+355;Storage network disconnect;45;Storage array network disconnect
+356;Slow storage access time;45;Storage array network disconnect
+357;Storage access error;45;Storage array network disconnect
+358;SAN failure alert;45;Storage array network disconnect
+359;Data loss on storage access;45;Storage array network disconnect
+360;Intermittent storage connectivity;45;Storage array network disconnect
+361;System hang on storage op;45;Storage array network disconnect
+362;User-facing storage error;45;Storage array network disconnect
+489;Data integrity check failed;45;Storage array network disconnect
+490;Process hung in execution;45;Storage array network disconnect
+363;Virtual network connectivity error;46;Virtual network misconfiguration
+364;Slow virtual network performance;46;Virtual network misconfiguration
+365;Packet loss in virtual network;46;Virtual network misconfiguration
+366;Virtual network error logged;46;Virtual network misconfiguration
+367;VM network access failure;46;Virtual network misconfiguration
+368;Incorrect virtual network setting;46;Virtual network misconfiguration
+369;Network timeout in VM;46;Virtual network misconfiguration
+370;User-facing VM network issue;46;Virtual network misconfiguration
+481;segfault at 0x0 ip 0x7f1234567890;46;Virtual network misconfiguration
+482;Performance degradation detected;46;Virtual network misconfiguration
+371;Backup power failure alert;47;UPS battery failure detected
+372;UPS runtime error;47;UPS battery failure detected
+373;System shutdown from power;47;UPS battery failure detected
+374;Power backup test failure;47;UPS battery failure detected
+375;Slow system recovery after power;47;UPS battery failure detected
+376;Hardware damage from power;47;UPS battery failure detected
+377;Intermittent power alert;47;UPS battery failure detected
+378;User-facing outage report;47;UPS battery failure detected
+483;Error logged in system journal;47;UPS battery failure detected
+484;Service stopped unexpectedly;47;UPS battery failure detected
+379;Cluster node offline alert;48;Cluster node offline
+380;Slow cluster performance;48;Cluster node offline
+381;Node failure error logged;48;Cluster node offline
+382;Service disruption in cluster;48;Cluster node offline
+383;Cluster resource error;48;Cluster node offline
+384;Application hang in cluster;48;Cluster node offline
+385;User-facing cluster issue;48;Cluster node offline
+386;Cluster downtime reported;48;Cluster node offline
+485;User request failed with error;48;Cluster node offline
+486;High CPU/memory usage alert;48;Cluster node offline
+387;Overheating alert in host;49;Host overheating alert
+388;Host thermal shutdown warning;49;Host overheating alert
+389;Slow VM performance from heat;49;Host overheating alert
+390;Host temperature error logged;49;Host overheating alert
+391;VM crash due to host overheating;49;Host overheating alert
+392;Thermal throttling in host;49;Host overheating alert
+393;System freeze on host load;49;Host overheating alert
+394;User complaint about VM issue;49;Host overheating alert
+487;Intermittent operation failure;49;Host overheating alert
+488;Operation timed out;49;Host overheating alert
+395;Snapshot creation error;50;Snapshot operation failed
+396;Slow snapshot operation;50;Snapshot operation failed
+397;Snapshot corruption alert;50;Snapshot operation failed
+398;VM crash during snapshot;50;Snapshot operation failed
+399;Data loss from snapshot failure;50;Snapshot operation failed
+400;Snapshot timeout warning;50;Snapshot operation failed
+401;System hang on snapshot task;50;Snapshot operation failed
+402;Snapshot restore failure;50;Snapshot operation failed
+489;Data integrity check failed;50;Snapshot operation failed
+490;Process hung in execution;50;Snapshot operation failed

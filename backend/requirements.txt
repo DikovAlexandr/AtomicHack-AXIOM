@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pandas
+aiokafka
+kafka-python
+python-dateutil
+python-multipart
+openpyxl
+sentence-transformers==5.1.1
+torch==2.6.0
+xlsxwriter
+requests
+aiogram>=3.0
+tqdm
+redis
+huggingface_hub
+psutil

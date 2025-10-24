@@ -1,0 +1,121 @@
+name: atomikhack
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.2
+    hostname: zookeeper
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.2
+    hostname: kafka
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_NUM_PARTITIONS: 1
+      KAFKA_LEADER_IMBALANCE_CHECK_INTERVAL_SECONDS: 10
+    healthcheck:
+      test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9092", "--list"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  redis:
+    image: redis:7.2.5-alpine
+    hostname: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend_service
+    depends_on:
+      kafka:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./data/anomalies_problems.csv:/app/data/anomalies_problems.csv:ro
+      - ./data/db:/app/db
+      - ./hf_cache:/app/hf_cache
+    ports:
+      - "8000:8000"
+    environment:
+      KAFKA_BOOTSTRAP: "kafka:9092"
+      ANOMALIES_CSV_PATH: "/app/data/anomalies_problems.csv"
+      HF_HOME: "/app/hf_cache"
+      TELEGRAM_BOT_TOKEN: "8278535587:AAFJWuG4clVNNGfTeehLulZ-vLqN9V5J3Ho"
+      DB_PATH: "/app/db/subscribers.db"
+      REDIS_HOST: "redis"
+      REDIS_PORT: "6379"
+    # For GPU
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+    #   start_period: 10s
+    #   interval: 10s
+    #   retries: 20
+    #   timeout: 5s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend_service
+    depends_on:
+      - backend
+      # backend:
+      #   condition: service_healthy
+    ports:
+      - "8501:8501"
+    environment:
+      API_BASE: "http://backend:8000"
+
+  replay:
+    build:
+      context: ./replay
+      dockerfile: Dockerfile
+    hostname: replay
+    container_name: replay
+    depends_on:
+      - kafka
+    volumes:
+      - ./data/logs:/logs:ro
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      TOPIC_PREFIX: logs
+      LOG_DIR: /logs
+      SPEED: 10.0
+      JITTER_MS: 0
+    restart: unless-stopped
